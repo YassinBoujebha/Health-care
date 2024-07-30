@@ -1,0 +1,45 @@
+/* Style global pour l'ensemble du composant */
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Utiliser toute la hauteur de la vue */
+    width: 100%;
+    background-color: #e0f7fa; /* Bleu ciel pour l'arrière-plan */
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  /* Contenu à propos de nous */
+  .about-us-content {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Titre */
+  .about-us-content h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraphe */
+  .about-us-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Media query pour une meilleure lisibilité sur les petits écrans */
+  @media screen and (max-width: 600px) {
+    .about-us-content {
+      padding: 20px;
+    }
+    .about-us-content p {
+      font-size: 1rem;
+    }
+  }
+  

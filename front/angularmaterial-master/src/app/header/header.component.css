@@ -1,0 +1,42 @@
+/* Style global pour l'ensemble du header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Assure que le header est au-dessus du contenu */
+}
+
+/* Style du mat-toolbar */
+.mat-toolbar {
+  background-color: #1563b5; /* Couleur de fond bleu */
+  color: #ffffff; /* Couleur du texte */
+}
+
+/* Style du logo */
+.logo {
+  font-size: 1.7rem;
+  font-weight:bolder;
+  margin-left: 20px; /* Marge à gauche pour le logo */
+}
+
+/* Espaceur flexible pour pousser les éléments à droite */
+.spacer {
+  flex: 1;
+}
+
+/* Style des boutons */
+.mat-toolbar button {
+  color: #ffffff; /* Couleur du texte des boutons */
+  
+}
+
+/* Icones dans les boutons */
+.mat-toolbar button mat-icon {
+  margin-right: 10px; /* Marge à droite pour l'icône */
+}
+
+/* Effet de survol sur les boutons */
+.mat-toolbar button:hover {
+  background-color: #0056b3; /* Changement de couleur de fond au survol */
+}

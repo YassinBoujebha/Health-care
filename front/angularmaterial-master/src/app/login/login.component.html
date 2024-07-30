@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="login-container">
+  <div class="login-box">
+    <h2>Login</h2>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <form (ngSubmit)="login()" class="login-form">
+      
+      <div class="form-field">
+        <label for="email"><mat-icon>email</mat-icon> Email:</label>
+        <input matInput type="email" id="email" name="email" [(ngModel)]="email" required>
+      </div>
+      <div class="form-field">
+        <label for="password"><mat-icon>lock</mat-icon> Password:</label>
+        <input matInput type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button mat-raised-button type="submit" class="login-button">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="result-container">
+  <div class="result-box" *ngIf="prediction">
+    <h2>Résultat de la Prédiction :</h2>
+    <p *ngIf="prediction.class === 1">Présence de tumeur cérébrale détectée.</p>
+    <p *ngIf="prediction.class === 0">Aucune tumeur cérébrale détectée.</p>
+    <p>Confiance : {{ prediction.confidence | percent }}</p>
+    <p class="support-message">{{ getSupportMessage() }}</p>
+  </div>
+</div>

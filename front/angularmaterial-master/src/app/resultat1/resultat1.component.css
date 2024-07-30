@@ -1,0 +1,33 @@
+/* component.resultat1.css */
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Utiliser toute la hauteur de la vue */
+    width: 100%;
+    background-color: #e0f7fa; /* Bleu ciel pour l'arrière-plan */
+  }
+  
+  .prediction-box {
+    background-color: #81f0ff;
+    padding: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px; /* Largeur maximale pour la boîte */
+    text-align: center;
+  }
+  
+  .prediction-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 2rem;
+  }
+  
+  .prediction-box p {
+    font-size: 1.2rem; /* Augmenter la taille de la police pour le message */
+    margin-bottom: 20px;
+  }
+  

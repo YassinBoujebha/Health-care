@@ -1,0 +1,139 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e0f7fa;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #131d87;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  color: #0a6f86;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.image {
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.square-image {
+  border-radius: 10px;
+  width: 600px;
+  height: 540px;
+  object-fit: cover;
+  
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width:  1220px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  max-height: 200px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-body.left {
+  align-items: flex-start;
+  margin-left: 107px;
+}
+
+.home-body.right {
+  align-items: flex-end;
+  margin-right: 107px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button[mat-raised-button] {
+  width: 200px;
+  padding: 50px;
+  font-size: 1.2em;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+button[mat-raised-button][color="primary"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+button[mat-raised-button][color="primary"]:hover {
+  background-color: #0056b3;
+}
+
+button[mat-raised-button][color="accent"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+}
+
+button[mat-raised-button][color="accent"]:hover {
+  background-color: #218838;
+}
+
+button[mat-raised-button]:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+span {
+  color: #333;
+  font-size: 1em;
+  margin-top: 10px;
+}

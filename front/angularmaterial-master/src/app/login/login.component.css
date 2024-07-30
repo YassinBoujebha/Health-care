@@ -1,0 +1,101 @@
+/* Style global pour l'ensemble du composant */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Bleu ciel pour l'arrière-plan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Conteneur principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Utiliser toute la hauteur de la vue */
+  width: 100%;
+  background-color: #e0f7fa; /* Bleu ciel pour l'arrière-plan */
+}
+
+/* Boîte de connexion */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px; /* Largeur maximale pour la boîte */
+}
+
+/* Titre du formulaire */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-size: 2rem;
+}
+
+/* Message d'erreur */
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style du formulaire */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Champ de formulaire */
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label de champ */
+.form-field label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Icone dans le label */
+.form-field mat-icon {
+  margin-right: 10px;
+}
+
+/* Bouton de connexion */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Champ d'entrée */
+input[matInput] {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[matInput]:focus {
+  border-color: #007bff;
+  outline: none;
+}

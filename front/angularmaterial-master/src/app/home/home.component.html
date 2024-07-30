@@ -1,0 +1,25 @@
+
+<h1>Bienvenue sur votre espace de diagnostic</h1>
+<br>
+<p>Veuillez télécharger vos documents pour obtenir les résultats de vos analyses.</p>
+
+<div class="home-container">
+  <!-- Input for NFS file -->
+  <div class="home-body left">
+    <input type="file" accept="image/*" (change)="onFileSelected($event, 'nfs')" id="fileInput1" hidden>
+    <button mat-raised-button color="primary" (click)="triggerFileInput('fileInput1')">Choisir un fichier NFS</button>
+    <span *ngIf="selectedFileNfs">{{ selectedFileNfs.name }}</span>
+    <button mat-raised-button color="accent" (click)="uploadFile('nfs')" [disabled]="!selectedFileNfs">Voir Résultat 1 (NFS)</button>
+  </div>
+    <img src="assets/bg2.png" alt="Your Image Description" class="square-image" />
+ 
+
+  <!-- Input for Scanner file -->
+  <div class="home-body right">
+    <input type="file" accept="image/*" (change)="onFileSelected($event, 'scanner')" id="fileInput2" hidden>
+    <button mat-raised-button color="primary" (click)="triggerFileInput('fileInput2')">Choisir un fichier Scanner</button>
+    <span *ngIf="selectedFileScanner">{{ selectedFileScanner.name }}</span>
+    <button mat-raised-button color="accent" (click)="uploadFile('scanner')" [disabled]="!selectedFileScanner">Voir Résultat 2 (Scanner)</button>
+  </div>
+</div>
+
